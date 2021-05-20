@@ -13,7 +13,7 @@ const listingRouter = require('./routes/listingRouter');
 // Parse the body of requests and apply cors
 app.use(cors());
 app.use(express.json());
-app.use(express.urlenconded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 
 // Serve static files
 app.use(express.static(path.resolve(__dirname, '../src/style.css')));
